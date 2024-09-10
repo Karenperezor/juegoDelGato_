@@ -12,7 +12,7 @@ class JuegoDelGato:
     def cambiar_turno(self):
         self.jugador_actual = "O" if self.jugador_actual == "X" else "X"
 
-    def realizar_movimiento(self, fila: int, columna: int) -> bool:
+    def realizar_movimiento(self, fila, columna):
         if self.tablero[fila][columna] == "":
             self.tablero[fila][columna] = self.jugador_actual
             return True
